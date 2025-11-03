@@ -34,7 +34,7 @@ gpgcheck=1
 enabled=1
 gpgkey=https://mirrors.aliyun.com/epel/RPM-GPG-KEY-EPEL-10
 eof
-yum update
+yum makecache
 yum install -y open-vm-tools open-vm-tools-desktop    #下载vm-tools
 #下面两行可能出现配置重复添加问题
 echo "PermitRootLogin yes" >> /etc/ssh/sshd_config    #修改ssh可以远程连接
