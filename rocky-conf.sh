@@ -26,8 +26,7 @@ gpgcheck=1
 enabled=1
 gpgkey=https://mirrors.aliyun.com/rockylinux/RPM-GPG-KEY-Rocky-10
 [epel]
-name=Rocky
- Linux $releasever - EPEL - Source
+name=Rocky Linux $releasever - EPEL - Source
 #mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=source&repo=BaseOS-$releaseversource$rltype
 baseurl=https://mirrors.aliyun.com/epel/10/Everything/x86_64/
 gpgcheck=1
@@ -50,7 +49,6 @@ setenforce 0
 systemctl disable firewalld.service 
 #修改命令提示符
 echo "PS1='\[\e[1;33m\][\u@\h \w] \$\[\e[0m\]'" >> /root/.bashrc
-yum install -y epel-release
 yum install -y langpacks-zh_CN glibc-langpack-zh   #下载中文语言包
 yum install -y man-pages-zh-CN    #下载man手册
 #配置中文环境
