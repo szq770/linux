@@ -50,7 +50,7 @@ systemctl disable firewalld.service
 #修改命令提示符
 echo "PS1='\[\e[1;33m\][\u@\h \w] \$\[\e[0m\]'" >> /root/.bashrc
 yum install -y langpacks-zh_CN glibc-langpack-zh   #下载中文语言包
-yum install -y man-pages-zh-CN    #下载man手册
+yum install -y man-pages-zh-CN.noarch   #下载man手册
 #配置中文环境
 cat > /etc/locale.conf << eof
 LANG=zh_CN.UTF-8
